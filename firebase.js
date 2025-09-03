@@ -3,9 +3,7 @@ import {
   getAuth, onAuthStateChanged, signInWithEmailAndPassword, 
   createUserWithEmailAndPassword, signOut, updatePassword
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
-import {
-  getFirestore, collection, addDoc, setDoc, getDoc, doc, query, where, getDocs, serverTimestamp, deleteDoc, deleteDoc
-} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+import { getFirestore, collection, addDoc, setDoc, getDoc, doc, query, where, getDocs, serverTimestamp, deleteDoc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
 export const firebaseConfig = {
   apiKey: "AIzaSyCr2nwoy1oucmXdHPh-YQuogeobych-XfI",
@@ -27,6 +25,5 @@ export const colRelatorios = collection(db, "relatorios");
 export const colRelatoriosMensais = collection(db, "relatorios_mensais");
 
 export {
-  onAuthStateChanged, signInWithEmailAndPassword, createUserWithEmailAndPassword, signOut, updatePassword,
-  collection, addDoc, setDoc, getDoc, doc, query, where, getDocs, serverTimestamp, deleteDoc
+  onAuthStateChanged, signInWithEmailAndPassword, createUserWithEmailAndPassword, signOut, updatePassword, collection, addDoc, setDoc, getDoc, doc, query, where, getDocs, serverTimestamp, deleteDoc
 };
