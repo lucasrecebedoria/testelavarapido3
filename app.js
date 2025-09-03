@@ -191,7 +191,15 @@ async function fillLessThanTwo(counts){
     if(c < 2){
       const prefHTML = prefixBadgeHtml(px);
       const tr = document.createElement('tr');
-      tr.innerHTML = `<td>${prefHTML}</td><td>${c}</td><td>${CURRENT_USER?.isAdmin ? '<button class="metal btn-outline btn-remove">Remover</button>' : '-'}</td>`;
+      tr.innerHTML = `
+  <td>${prefHTML}</td>
+  <td>${c}</td>
+  <td>
+    ${CURRENT_USER?.isAdmin 
+      ? '<button class="icon-btn btn-remove" title="Excluir"><span>🗑️</span></button>' 
+      : '-'}
+  </td>
+`;
       tbody.appendChild(tr);
     }
   });

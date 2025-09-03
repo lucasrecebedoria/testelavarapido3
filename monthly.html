@@ -32,9 +32,23 @@
           <div class="label">Mês</div>
           <input id="mesInput" class="input" type="month" />
         </div>
+        <div class="col-4">
+          <div class="label">Prefixo</div>
+          <input id="prefixInput" class="input" type="text" placeholder="Digite o prefixo" />
+        </div>
       </div>
+
+      <!-- Resumo de quantas vezes o prefixo foi lavado -->
+      <div id="resumoPrefixo" style="margin:10px 0; font-weight:bold;"></div>
+
       <table class="table" id="tabelaMensal">
-        <thead><tr><th>Prefixo</th><th>Qtd lavagens</th><th>Dias</th></tr></thead>
+        <thead>
+          <tr>
+            <th>Prefixo</th>
+            <th>Qtd lavagens</th>
+            <th>Dias</th>
+          </tr>
+        </thead>
         <tbody></tbody>
       </table>
     </div>
